@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Подкова{% endblock %}
+{% block body %}
+    <ul id="main">
+        <p>Добро пожаловать!</p>
+            {% for main in info %}
+            <li>{{ main.description }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

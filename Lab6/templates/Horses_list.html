@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+{% block title %}Лошади{% endblock %}
+{% block body %}
+    <ul id="horses">
+        {% for horse in horses %}
+            <li>{{ horse.nickname }}, № {{ horse.number }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
