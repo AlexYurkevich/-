@@ -1,0 +1,5 @@
+
+{% block title %}{% endblock %}
+{% block body %}
+    <li><a href="{% url 'horse_url' horse.id %}">{{ horse.nickname }}, {{ horse.age }} years old</a></li><br>
+{% endblock %}
