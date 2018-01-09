@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Подкова{% endblock %}
+{% block body %}
+    <ul id="list">
+        {% for horse in horses %}
+            {% if 'nickname' in horse %}
+                {% include 'current_buddy.html' with element=horse %}
+            {% endif %}
+        {% empty %}
+        {% endfor %}
+    </ul>
+{% endblock %}

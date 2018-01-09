@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Вход{% endblock %}
+{% block body %}
+    <div id="endReg">
+    <form method="post">
+        {% csrf_token %}
+       <p> Вы вошли как {{ user.username }}</p>
+        <button type="submit" name="logout" class="btn btn-sign_up">Выйти</button>
+    </form>
+    </div>
+{% endblock %}
